@@ -1,0 +1,1259 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns='http://www.w3.org/1999/xhtml' xml:lang='en' lang='en'>
+
+<head>
+  <title>MadAnalysis 5 HTML report</title>
+  <link rel='stylesheet' media='screen' type='text/css' title='style' href='style.css' />
+<meta http-equiv='Content-Type' content='text/html;charset=utf-8'/>
+</head>
+
+<body>
+<div id='top' class='top'>
+  <table>
+    <tr>
+      <td width='35%'>
+        <img style='width: 182px; height: 53px;' alt='ma5-logo' src='logo.png' /><br />
+        <a href='http://madanalysis.irmp.ucl.ac.be'>Please visit us.</a>
+      </td>
+      <td width='65%'>
+        <h1>MadAnalysis 5 report</h1><br />
+        <i>Created by <font color='#0000CC'>root</font> on  <font color='#0000CC'>18 March 2023, 03:14:33</font></i>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<div id='menu' class= 'menu'>
+  <br />
+  <h3>Setup</h3>
+  <ul>
+    <li><a href='#Commandhistory'>Command history</a></li>
+    <li><a href='#Configuration'>Configuration</a></li>
+  </ul>
+  <h3>Datasets</h3>
+  <ul>
+    <li><a href='#hsig'>hsig</a></li>
+  </ul>
+  <h3>Histos and cuts</h3>
+  <ul>
+    <li><a href='#Histogram1'>Histogram 1</a></li>
+    <li><a href='#Histogram2'>Histogram 2</a></li>
+    <li><a href='#Histogram3'>Histogram 3</a></li>
+    <li><a href='#Cut1'>Cut 1</a></li>
+    <li><a href='#Cut2'>Cut 2</a></li>
+    <li><a href='#Histogram4'>Histogram 4</a></li>
+    <li><a href='#Histogram5'>Histogram 5</a></li>
+    <li><a href='#Histogram6'>Histogram 6</a></li>
+    <li><a href='#Histogram7'>Histogram 7</a></li>
+    <li><a href='#Histogram8'>Histogram 8</a></li>
+    <li><a href='#Histogram9'>Histogram 9</a></li>
+    <li><a href='#Histogram10'>Histogram 10</a></li>
+    <li><a href='#Histogram11'>Histogram 11</a></li>
+    <li><a href='#Histogram12'>Histogram 12</a></li>
+    <li><a href='#Cut3'>Cut 3</a></li>
+    <li><a href='#Cut4'>Cut 4</a></li>
+    <li><a href='#Histogram13'>Histogram 13</a></li>
+    <li><a href='#Histogram14'>Histogram 14</a></li>
+    <li><a href='#Histogram15'>Histogram 15</a></li>
+  </ul>
+  <h3>Summary</h3>
+  <ul>
+    <li><a href='#Cut-flowcharts'>Cut-flow charts</a></li>
+  </ul>
+</div>
+
+<div id='main' class='main'>
+  <br /><br />
+
+  <h2>Setup</h2><br />
+  <h3><a name='Commandhistory'>Command history</a></h3><br />
+  <tt>ma5>import samples/tag_1_pythia8_events.hepmc as hsig</tt><br />
+  <tt>ma5>ma5>plot M( a[1] a[2] ) 50 100 200</tt><br />
+  <tt>ma5>plot M( a[1] a[2] ) 50 100 200</tt><br />
+  <tt>ma5>plot M( a[1] a[2] ) 100 100 200</tt><br />
+  <tt>ma5>plot M( a[1] a[2] ) 200 100 200</tt><br />
+  <tt>ma5>reject PT( a[1] ) < 40</tt><br />
+  <tt>ma5>reject PT( a[2] ) < 30</tt><br />
+  <tt>ma5>plot M( a[1] a[2] ) 100 100 200</tt><br />
+  <tt>ma5>plot M( a[1] a[2] ) 200 100 200</tt><br />
+  <tt>ma5>plot M( a[1] a[2] ) 100 105 160</tt><br />
+  <tt>ma5>plot M( a[1] a[2] ) 200 105 160</tt><br />
+  <tt>ma5>set main.lumi = 1</tt><br />
+  <tt>ma5>plot M( a[1] a[2] ) 100 105 160</tt><br />
+  <tt>ma5>set main.lumi = 1e-3</tt><br />
+  <tt>ma5>plot M( a[1] a[2] ) 100 105 160</tt><br />
+  <tt>ma5>plot M( a[1] a[2] ) 200 105 160</tt><br />
+  <tt>ma5>plot vM ( a[1] a[2] ) 100 105 160</tt><br />
+  <tt>ma5>plot vM ( a[1] a[2] ) 200 105 160</tt><br />
+  <tt>ma5>select ( a[1] a[2] ) 125.0 < M < 130.0</tt><br />
+  <tt>ma5>reject M( a[1] a[2] ) < 120.0</tt><br />
+  <tt>ma5>reject M( a[1] a[2] ) > 130.0</tt><br />
+  <tt>ma5>plot M( a[1] a[2] ) 100 115 135</tt><br />
+  <tt>ma5>plot M( a[1] a[2] ) 200 115 135</tt><br />
+  <tt>ma5>plot vM( a[1] a[2] ) 100 115 135</tt><br />
+  <tt>ma5>submit</tt><br />
+  <br />
+  <h3><a name='Configuration'>Configuration</a></h3>
+  <ul>
+    <li>
+      MadAnalysis version 1.8.44 (2020/04/17).<br />
+    </li>
+    <li>
+      Histograms given for an integrated luminosity of <font color='#0000CC'>0.001</font><font color='#0000CC'> fb</font><sup><font color='#0000CC'>-1</font></sup><font color='#0000CC'>.</font><br />
+    </li>
+  </ul>
+  <br /><br />
+
+  <h2>Datasets</h2><br />
+  <h3><a name='hsig'>hsig</a></h3>
+  <ul>
+    <li>
+      Sample consisting of: <font color='#0000CC'>signal</font> events.<br />
+    </li>
+    <li>
+      Generated events: <font color='#0000CC'>50727 </font> events.<br />
+    </li>
+    <li>
+      Normalization to the luminosity: <font color='#0000CC'>148</font><font color='#0000CC'> +/- </font><font color='#0000CC'>0 </font> events.<br />
+    </li>
+    <li>
+      Ratio (event weight): <font color='#0000CC'>0.0029 </font>. <br />
+    </li>
+  </ul>
+  <table>
+    <tr>
+      <td width='39.0%' bgcolor='#FFFF00'>
+        Path to the event file  <br />
+      </td> 
+      <td width='18.0%' bgcolor='#FFFF00'>
+        Nr. of events  <br />
+      </td> 
+      <td width='21.0%' bgcolor='#FFFF00'>
+        Cross section (pb)  <br />
+      </td> 
+      <td width='21.0%' bgcolor='#FFFF00'>
+        Negative wgts (%)  <br />
+      </td>
+    </tr>
+    <tr>
+      <td width='39.0%' bgcolor='#FFFFFF'>
+        samples/tag_1_pythia8_events.hepmc  <br />
+      </td> 
+      <td width='18.0%' bgcolor='#FFFFFF'>
+        50727  <br />
+      </td> 
+      <td width='21.0%' bgcolor='#FFFFFF'>
+        148  <br />
+      </td> 
+      <td width='21.0%' bgcolor='#FFFFFF'>
+        0.0  <br />
+      </td>
+    </tr>
+  </table><br /> <br />
+  <br /><br />
+
+  <h2>Histos and cuts</h2><br />
+  <h3><a name='Histogram1'>Histogram 1</a></h3><br />
+<b>* Plot: M ( a[1] a[2] ) </b>  <br />
+<BR>  <br />
+  <table>
+    <tr>
+      <td width='17.0%' bgcolor='#FFFF00'>
+        Dataset  <br />
+      </td> 
+      <td width='16.0%' bgcolor='#FFFF00'>
+        Integral  <br />
+      </td> 
+      <td width='13.0%' bgcolor='#FFFF00'>
+        Entries per event  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FFFF00'>
+        Mean  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FFFF00'>
+        RMS  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FFFF00'>
+        % underflow  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FFFF00'>
+        % overflow  <br />
+      </td>
+    </tr>
+    <tr>
+      <td width='17.0%' bgcolor='#FFFFFF'>
+        hsig  <br />
+      </td> 
+      <td width='16.0%' bgcolor='#FFFFFF'>
+        148  <br />
+      </td> 
+      <td width='13.0%' bgcolor='#FFFFFF'>
+        1.0  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FFFFFF'>
+        44.0227  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FFFFFF'>
+        38.33  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FF0000'>
+        94.82  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FF0000'>
+        0.9262  <br />
+      </td>
+    </tr>
+  </table><br /> <br />
+  <center>
+    <img src='selection_0.png' height='420.459770115' alt ='' />
+  </center><br /> <br />
+  <br />
+  <h3><a name='Histogram2'>Histogram 2</a></h3><br />
+<b>* Plot: M ( a[1] a[2] ) </b>  <br />
+<BR>  <br />
+  <table>
+    <tr>
+      <td width='17.0%' bgcolor='#FFFF00'>
+        Dataset  <br />
+      </td> 
+      <td width='16.0%' bgcolor='#FFFF00'>
+        Integral  <br />
+      </td> 
+      <td width='13.0%' bgcolor='#FFFF00'>
+        Entries per event  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FFFF00'>
+        Mean  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FFFF00'>
+        RMS  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FFFF00'>
+        % underflow  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FFFF00'>
+        % overflow  <br />
+      </td>
+    </tr>
+    <tr>
+      <td width='17.0%' bgcolor='#FFFFFF'>
+        hsig  <br />
+      </td> 
+      <td width='16.0%' bgcolor='#FFFFFF'>
+        148  <br />
+      </td> 
+      <td width='13.0%' bgcolor='#FFFFFF'>
+        1.0  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FFFFFF'>
+        44.0227  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FFFFFF'>
+        38.33  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FF0000'>
+        94.82  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FF0000'>
+        0.9262  <br />
+      </td>
+    </tr>
+  </table><br /> <br />
+  <center>
+    <img src='selection_1.png' height='420.459770115' alt ='' />
+  </center><br /> <br />
+  <br />
+  <h3><a name='Histogram3'>Histogram 3</a></h3><br />
+<b>* Plot: M ( a[1] a[2] ) </b>  <br />
+<BR>  <br />
+  <table>
+    <tr>
+      <td width='17.0%' bgcolor='#FFFF00'>
+        Dataset  <br />
+      </td> 
+      <td width='16.0%' bgcolor='#FFFF00'>
+        Integral  <br />
+      </td> 
+      <td width='13.0%' bgcolor='#FFFF00'>
+        Entries per event  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FFFF00'>
+        Mean  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FFFF00'>
+        RMS  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FFFF00'>
+        % underflow  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FFFF00'>
+        % overflow  <br />
+      </td>
+    </tr>
+    <tr>
+      <td width='17.0%' bgcolor='#FFFFFF'>
+        hsig  <br />
+      </td> 
+      <td width='16.0%' bgcolor='#FFFFFF'>
+        148  <br />
+      </td> 
+      <td width='13.0%' bgcolor='#FFFFFF'>
+        1.0  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FFFFFF'>
+        44.0227  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FFFFFF'>
+        38.33  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FF0000'>
+        94.82  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FF0000'>
+        0.9262  <br />
+      </td>
+    </tr>
+  </table><br /> <br />
+  <center>
+    <img src='selection_2.png' height='420.459770115' alt ='' />
+  </center><br /> <br />
+  <br />
+  <h3><a name='Cut1'>Cut 1</a></h3><br />
+<b>* Cut: reject PT ( a[1] ) < 40.0</b>  <br />
+<BR>  <br />
+  <table>
+    <tr>
+      <td width='15.0%' bgcolor='#FFFF00'>
+        Dataset  <br />
+      </td> 
+      <td width='19.0%' bgcolor='#FFFF00'>
+        Events kept:<br />
+        K  <br />
+      </td> 
+      <td width='19.0%' bgcolor='#FFFF00'>
+        Rejected events:<br />
+        R  <br />
+      </td> 
+      <td width='24.0%' bgcolor='#FFFF00'>
+        Efficiency:<br />
+        K / (K + R)  <br />
+      </td> 
+      <td width='23.0%' bgcolor='#FFFF00'>
+        Cumul. efficiency:<br />
+        K / Initial  <br />
+      </td>
+    </tr>
+    <tr>
+      <td width='15.0%' bgcolor='#FFFFFF'>
+        hsig  <br />
+      </td> 
+      <td width='19.0%' bgcolor='#FFFFFF'>
+        8.75 +/- 2.87  <br />
+      </td> 
+      <td width='19.0%' bgcolor='#FFFFFF'>
+        139.88 +/- 2.87  <br />
+      </td> 
+      <td width='24.0%' bgcolor='#FFFFFF'>
+        0.0589 +/- 0.0193  <br />
+      </td> 
+      <td width='23.0%' bgcolor='#FFFFFF'>
+        0.0589 +/- 0.0193  <br />
+      </td>
+    </tr>
+  </table><br /> <br />
+  <br />
+  <h3><a name='Cut2'>Cut 2</a></h3><br />
+<b>* Cut: reject PT ( a[2] ) < 30.0</b>  <br />
+<BR>  <br />
+  <table>
+    <tr>
+      <td width='15.0%' bgcolor='#FFFF00'>
+        Dataset  <br />
+      </td> 
+      <td width='19.0%' bgcolor='#FFFF00'>
+        Events kept:<br />
+        K  <br />
+      </td> 
+      <td width='19.0%' bgcolor='#FFFF00'>
+        Rejected events:<br />
+        R  <br />
+      </td> 
+      <td width='24.0%' bgcolor='#FFFF00'>
+        Efficiency:<br />
+        K / (K + R)  <br />
+      </td> 
+      <td width='23.0%' bgcolor='#FFFF00'>
+        Cumul. efficiency:<br />
+        K / Initial  <br />
+      </td>
+    </tr>
+    <tr>
+      <td width='15.0%' bgcolor='#FFFFFF'>
+        hsig  <br />
+      </td> 
+      <td width='19.0%' bgcolor='#FFFFFF'>
+        7.1 +/- 2.6  <br />
+      </td> 
+      <td width='19.0%' bgcolor='#FFFFFF'>
+        1.67 +/- 1.28  <br />
+      </td> 
+      <td width='24.0%' bgcolor='#FFFFFF'>
+        0.810 +/- 0.133  <br />
+      </td> 
+      <td width='23.0%' bgcolor='#FFFFFF'>
+        0.0477 +/- 0.0175  <br />
+      </td>
+    </tr>
+  </table><br /> <br />
+  <br />
+  <h3><a name='Histogram4'>Histogram 4</a></h3><br />
+<b>* Plot: M ( a[1] a[2] ) </b>  <br />
+<BR>  <br />
+  <table>
+    <tr>
+      <td width='17.0%' bgcolor='#FFFF00'>
+        Dataset  <br />
+      </td> 
+      <td width='16.0%' bgcolor='#FFFF00'>
+        Integral  <br />
+      </td> 
+      <td width='13.0%' bgcolor='#FFFF00'>
+        Entries per event  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FFFF00'>
+        Mean  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FFFF00'>
+        RMS  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FFFF00'>
+        % underflow  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FFFF00'>
+        % overflow  <br />
+      </td>
+    </tr>
+    <tr>
+      <td width='17.0%' bgcolor='#FFFFFF'>
+        hsig  <br />
+      </td> 
+      <td width='16.0%' bgcolor='#FFFFFF'>
+        5.77  <br />
+      </td> 
+      <td width='13.0%' bgcolor='#FFFFFF'>
+        1.0  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FFFFFF'>
+        146.176  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FFFFFF'>
+        90.23  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FF0000'>
+        31.15  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FF0000'>
+        15.5  <br />
+      </td>
+    </tr>
+  </table><br /> <br />
+  <center>
+    <img src='selection_3.png' height='420.459770115' alt ='' />
+  </center><br /> <br />
+  <br />
+  <h3><a name='Histogram5'>Histogram 5</a></h3><br />
+<b>* Plot: M ( a[1] a[2] ) </b>  <br />
+<BR>  <br />
+  <table>
+    <tr>
+      <td width='17.0%' bgcolor='#FFFF00'>
+        Dataset  <br />
+      </td> 
+      <td width='16.0%' bgcolor='#FFFF00'>
+        Integral  <br />
+      </td> 
+      <td width='13.0%' bgcolor='#FFFF00'>
+        Entries per event  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FFFF00'>
+        Mean  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FFFF00'>
+        RMS  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FFFF00'>
+        % underflow  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FFFF00'>
+        % overflow  <br />
+      </td>
+    </tr>
+    <tr>
+      <td width='17.0%' bgcolor='#FFFFFF'>
+        hsig  <br />
+      </td> 
+      <td width='16.0%' bgcolor='#FFFFFF'>
+        5.77  <br />
+      </td> 
+      <td width='13.0%' bgcolor='#FFFFFF'>
+        1.0  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FFFFFF'>
+        146.176  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FFFFFF'>
+        90.23  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FF0000'>
+        31.15  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FF0000'>
+        15.5  <br />
+      </td>
+    </tr>
+  </table><br /> <br />
+  <center>
+    <img src='selection_4.png' height='420.459770115' alt ='' />
+  </center><br /> <br />
+  <br />
+  <h3><a name='Histogram6'>Histogram 6</a></h3><br />
+<b>* Plot: M ( a[1] a[2] ) </b>  <br />
+<BR>  <br />
+  <table>
+    <tr>
+      <td width='17.0%' bgcolor='#FFFF00'>
+        Dataset  <br />
+      </td> 
+      <td width='16.0%' bgcolor='#FFFF00'>
+        Integral  <br />
+      </td> 
+      <td width='13.0%' bgcolor='#FFFF00'>
+        Entries per event  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FFFF00'>
+        Mean  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FFFF00'>
+        RMS  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FFFF00'>
+        % underflow  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FFFF00'>
+        % overflow  <br />
+      </td>
+    </tr>
+    <tr>
+      <td width='17.0%' bgcolor='#FFFFFF'>
+        hsig  <br />
+      </td> 
+      <td width='16.0%' bgcolor='#FFFFFF'>
+        5.77  <br />
+      </td> 
+      <td width='13.0%' bgcolor='#FFFFFF'>
+        1.0  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FFFFFF'>
+        146.176  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FFFFFF'>
+        90.23  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FF0000'>
+        36.17  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FF0000'>
+        25.53  <br />
+      </td>
+    </tr>
+  </table><br /> <br />
+  <center>
+    <img src='selection_5.png' height='420.459770115' alt ='' />
+  </center><br /> <br />
+  <br />
+  <h3><a name='Histogram7'>Histogram 7</a></h3><br />
+<b>* Plot: M ( a[1] a[2] ) </b>  <br />
+<BR>  <br />
+  <table>
+    <tr>
+      <td width='17.0%' bgcolor='#FFFF00'>
+        Dataset  <br />
+      </td> 
+      <td width='16.0%' bgcolor='#FFFF00'>
+        Integral  <br />
+      </td> 
+      <td width='13.0%' bgcolor='#FFFF00'>
+        Entries per event  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FFFF00'>
+        Mean  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FFFF00'>
+        RMS  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FFFF00'>
+        % underflow  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FFFF00'>
+        % overflow  <br />
+      </td>
+    </tr>
+    <tr>
+      <td width='17.0%' bgcolor='#FFFFFF'>
+        hsig  <br />
+      </td> 
+      <td width='16.0%' bgcolor='#FFFFFF'>
+        5.77  <br />
+      </td> 
+      <td width='13.0%' bgcolor='#FFFFFF'>
+        1.0  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FFFFFF'>
+        146.176  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FFFFFF'>
+        90.23  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FF0000'>
+        36.17  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FF0000'>
+        25.53  <br />
+      </td>
+    </tr>
+  </table><br /> <br />
+  <center>
+    <img src='selection_6.png' height='420.459770115' alt ='' />
+  </center><br /> <br />
+  <br />
+  <h3><a name='Histogram8'>Histogram 8</a></h3><br />
+<b>* Plot: M ( a[1] a[2] ) </b>  <br />
+<BR>  <br />
+  <table>
+    <tr>
+      <td width='17.0%' bgcolor='#FFFF00'>
+        Dataset  <br />
+      </td> 
+      <td width='16.0%' bgcolor='#FFFF00'>
+        Integral  <br />
+      </td> 
+      <td width='13.0%' bgcolor='#FFFF00'>
+        Entries per event  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FFFF00'>
+        Mean  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FFFF00'>
+        RMS  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FFFF00'>
+        % underflow  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FFFF00'>
+        % overflow  <br />
+      </td>
+    </tr>
+    <tr>
+      <td width='17.0%' bgcolor='#FFFFFF'>
+        hsig  <br />
+      </td> 
+      <td width='16.0%' bgcolor='#FFFFFF'>
+        5.77  <br />
+      </td> 
+      <td width='13.0%' bgcolor='#FFFFFF'>
+        1.0  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FFFFFF'>
+        146.176  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FFFFFF'>
+        90.23  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FF0000'>
+        36.17  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FF0000'>
+        25.53  <br />
+      </td>
+    </tr>
+  </table><br /> <br />
+  <center>
+    <img src='selection_7.png' height='420.459770115' alt ='' />
+  </center><br /> <br />
+  <br />
+  <h3><a name='Histogram9'>Histogram 9</a></h3><br />
+<b>* Plot: M ( a[1] a[2] ) </b>  <br />
+<BR>  <br />
+  <table>
+    <tr>
+      <td width='17.0%' bgcolor='#FFFF00'>
+        Dataset  <br />
+      </td> 
+      <td width='16.0%' bgcolor='#FFFF00'>
+        Integral  <br />
+      </td> 
+      <td width='13.0%' bgcolor='#FFFF00'>
+        Entries per event  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FFFF00'>
+        Mean  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FFFF00'>
+        RMS  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FFFF00'>
+        % underflow  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FFFF00'>
+        % overflow  <br />
+      </td>
+    </tr>
+    <tr>
+      <td width='17.0%' bgcolor='#FFFFFF'>
+        hsig  <br />
+      </td> 
+      <td width='16.0%' bgcolor='#FFFFFF'>
+        5.77  <br />
+      </td> 
+      <td width='13.0%' bgcolor='#FFFFFF'>
+        1.0  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FFFFFF'>
+        146.176  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FFFFFF'>
+        90.23  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FF0000'>
+        36.17  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FF0000'>
+        25.53  <br />
+      </td>
+    </tr>
+  </table><br /> <br />
+  <center>
+    <img src='selection_8.png' height='420.459770115' alt ='' />
+  </center><br /> <br />
+  <br />
+  <h3><a name='Histogram10'>Histogram 10</a></h3><br />
+<b>* Plot: M ( a[1] a[2] ) </b>  <br />
+<BR>  <br />
+  <table>
+    <tr>
+      <td width='17.0%' bgcolor='#FFFF00'>
+        Dataset  <br />
+      </td> 
+      <td width='16.0%' bgcolor='#FFFF00'>
+        Integral  <br />
+      </td> 
+      <td width='13.0%' bgcolor='#FFFF00'>
+        Entries per event  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FFFF00'>
+        Mean  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FFFF00'>
+        RMS  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FFFF00'>
+        % underflow  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FFFF00'>
+        % overflow  <br />
+      </td>
+    </tr>
+    <tr>
+      <td width='17.0%' bgcolor='#FFFFFF'>
+        hsig  <br />
+      </td> 
+      <td width='16.0%' bgcolor='#FFFFFF'>
+        5.77  <br />
+      </td> 
+      <td width='13.0%' bgcolor='#FFFFFF'>
+        1.0  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FFFFFF'>
+        146.176  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FFFFFF'>
+        90.23  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FF0000'>
+        36.17  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FF0000'>
+        25.53  <br />
+      </td>
+    </tr>
+  </table><br /> <br />
+  <center>
+    <img src='selection_9.png' height='420.459770115' alt ='' />
+  </center><br /> <br />
+  <br />
+  <h3><a name='Histogram11'>Histogram 11</a></h3><br />
+<b>* Plot: M ( a[1] a[2] ) </b>  <br />
+<BR>  <br />
+  <table>
+    <tr>
+      <td width='17.0%' bgcolor='#FFFF00'>
+        Dataset  <br />
+      </td> 
+      <td width='16.0%' bgcolor='#FFFF00'>
+        Integral  <br />
+      </td> 
+      <td width='13.0%' bgcolor='#FFFF00'>
+        Entries per event  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FFFF00'>
+        Mean  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FFFF00'>
+        RMS  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FFFF00'>
+        % underflow  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FFFF00'>
+        % overflow  <br />
+      </td>
+    </tr>
+    <tr>
+      <td width='17.0%' bgcolor='#FFFFFF'>
+        hsig  <br />
+      </td> 
+      <td width='16.0%' bgcolor='#FFFFFF'>
+        5.77  <br />
+      </td> 
+      <td width='13.0%' bgcolor='#FFFFFF'>
+        1.0  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FFFFFF'>
+        146.176  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FFFFFF'>
+        90.23  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FF0000'>
+        36.17  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FF0000'>
+        25.53  <br />
+      </td>
+    </tr>
+  </table><br /> <br />
+  <center>
+    <img src='selection_10.png' height='420.459770115' alt ='' />
+  </center><br /> <br />
+  <br />
+  <h3><a name='Histogram12'>Histogram 12</a></h3><br />
+<b>* Plot: M ( a[1] a[2] ) </b>  <br />
+<BR>  <br />
+  <table>
+    <tr>
+      <td width='17.0%' bgcolor='#FFFF00'>
+        Dataset  <br />
+      </td> 
+      <td width='16.0%' bgcolor='#FFFF00'>
+        Integral  <br />
+      </td> 
+      <td width='13.0%' bgcolor='#FFFF00'>
+        Entries per event  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FFFF00'>
+        Mean  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FFFF00'>
+        RMS  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FFFF00'>
+        % underflow  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FFFF00'>
+        % overflow  <br />
+      </td>
+    </tr>
+    <tr>
+      <td width='17.0%' bgcolor='#FFFFFF'>
+        hsig  <br />
+      </td> 
+      <td width='16.0%' bgcolor='#FFFFFF'>
+        5.77  <br />
+      </td> 
+      <td width='13.0%' bgcolor='#FFFFFF'>
+        1.0  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FFFFFF'>
+        146.176  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FFFFFF'>
+        90.23  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FF0000'>
+        36.17  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FF0000'>
+        25.53  <br />
+      </td>
+    </tr>
+  </table><br /> <br />
+  <center>
+    <img src='selection_11.png' height='420.459770115' alt ='' />
+  </center><br /> <br />
+  <br />
+  <h3><a name='Cut3'>Cut 3</a></h3><br />
+<b>* Cut: reject M ( a[1] a[2] ) < 120.0</b>  <br />
+<BR>  <br />
+  <table>
+    <tr>
+      <td width='15.0%' bgcolor='#FFFF00'>
+        Dataset  <br />
+      </td> 
+      <td width='19.0%' bgcolor='#FFFF00'>
+        Events kept:<br />
+        K  <br />
+      </td> 
+      <td width='19.0%' bgcolor='#FFFF00'>
+        Rejected events:<br />
+        R  <br />
+      </td> 
+      <td width='24.0%' bgcolor='#FFFF00'>
+        Efficiency:<br />
+        K / (K + R)  <br />
+      </td> 
+      <td width='23.0%' bgcolor='#FFFF00'>
+        Cumul. efficiency:<br />
+        K / Initial  <br />
+      </td>
+    </tr>
+    <tr>
+      <td width='15.0%' bgcolor='#FFFFFF'>
+        hsig  <br />
+      </td> 
+      <td width='19.0%' bgcolor='#FFFFFF'>
+        3.54 +/- 1.86  <br />
+      </td> 
+      <td width='19.0%' bgcolor='#FFFFFF'>
+        3.54 +/- 1.86  <br />
+      </td> 
+      <td width='24.0%' bgcolor='#FFFFFF'>
+        0.500 +/- 0.188  <br />
+      </td> 
+      <td width='23.0%' bgcolor='#FFFFFF'>
+        0.0238 +/- 0.0125  <br />
+      </td>
+    </tr>
+  </table><br /> <br />
+  <br />
+  <h3><a name='Cut4'>Cut 4</a></h3><br />
+<b>* Cut: reject M ( a[1] a[2] ) > 130.0</b>  <br />
+<BR>  <br />
+  <table>
+    <tr>
+      <td width='15.0%' bgcolor='#FFFF00'>
+        Dataset  <br />
+      </td> 
+      <td width='19.0%' bgcolor='#FFFF00'>
+        Events kept:<br />
+        K  <br />
+      </td> 
+      <td width='19.0%' bgcolor='#FFFF00'>
+        Rejected events:<br />
+        R  <br />
+      </td> 
+      <td width='24.0%' bgcolor='#FFFF00'>
+        Efficiency:<br />
+        K / (K + R)  <br />
+      </td> 
+      <td width='23.0%' bgcolor='#FFFF00'>
+        Cumul. efficiency:<br />
+        K / Initial  <br />
+      </td>
+    </tr>
+    <tr>
+      <td width='15.0%' bgcolor='#FFFFFF'>
+        hsig  <br />
+      </td> 
+      <td width='19.0%' bgcolor='#FFFFFF'>
+        0.634 +/- 0.794  <br />
+      </td> 
+      <td width='19.0%' bgcolor='#FFFFFF'>
+        2.91 +/- 1.69  <br />
+      </td> 
+      <td width='24.0%' bgcolor='#FFFFFF'>
+        0.179 +/- 0.204  <br />
+      </td> 
+      <td width='23.0%' bgcolor='#FFFFFF'>
+        0.00426 +/- 0.00534  <br />
+      </td>
+    </tr>
+  </table><br /> <br />
+  <br />
+  <h3><a name='Histogram13'>Histogram 13</a></h3><br />
+<b>* Plot: M ( a[1] a[2] ) </b>  <br />
+<BR>  <br />
+  <table>
+    <tr>
+      <td width='17.0%' bgcolor='#FFFF00'>
+        Dataset  <br />
+      </td> 
+      <td width='16.0%' bgcolor='#FFFF00'>
+        Integral  <br />
+      </td> 
+      <td width='13.0%' bgcolor='#FFFF00'>
+        Entries per event  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FFFF00'>
+        Mean  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FFFF00'>
+        RMS  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FFFF00'>
+        % underflow  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FFFF00'>
+        % overflow  <br />
+      </td>
+    </tr>
+    <tr>
+      <td width='17.0%' bgcolor='#FFFFFF'>
+        hsig  <br />
+      </td> 
+      <td width='16.0%' bgcolor='#FFFFFF'>
+        0.501  <br />
+      </td> 
+      <td width='13.0%' bgcolor='#FFFFFF'>
+        1.0  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FFFFFF'>
+        124.858  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FFFFFF'>
+        2.517  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#00FF00'>
+        0.0  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#00FF00'>
+        0.0  <br />
+      </td>
+    </tr>
+  </table><br /> <br />
+  <center>
+    <img src='selection_12.png' height='420.459770115' alt ='' />
+  </center><br /> <br />
+  <br />
+  <h3><a name='Histogram14'>Histogram 14</a></h3><br />
+<b>* Plot: M ( a[1] a[2] ) </b>  <br />
+<BR>  <br />
+  <table>
+    <tr>
+      <td width='17.0%' bgcolor='#FFFF00'>
+        Dataset  <br />
+      </td> 
+      <td width='16.0%' bgcolor='#FFFF00'>
+        Integral  <br />
+      </td> 
+      <td width='13.0%' bgcolor='#FFFF00'>
+        Entries per event  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FFFF00'>
+        Mean  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FFFF00'>
+        RMS  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FFFF00'>
+        % underflow  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FFFF00'>
+        % overflow  <br />
+      </td>
+    </tr>
+    <tr>
+      <td width='17.0%' bgcolor='#FFFFFF'>
+        hsig  <br />
+      </td> 
+      <td width='16.0%' bgcolor='#FFFFFF'>
+        0.501  <br />
+      </td> 
+      <td width='13.0%' bgcolor='#FFFFFF'>
+        1.0  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FFFFFF'>
+        124.858  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FFFFFF'>
+        2.517  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#00FF00'>
+        0.0  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#00FF00'>
+        0.0  <br />
+      </td>
+    </tr>
+  </table><br /> <br />
+  <center>
+    <img src='selection_13.png' height='420.459770115' alt ='' />
+  </center><br /> <br />
+  <br />
+  <h3><a name='Histogram15'>Histogram 15</a></h3><br />
+<b>* Plot: M ( a[1] a[2] ) </b>  <br />
+<BR>  <br />
+  <table>
+    <tr>
+      <td width='17.0%' bgcolor='#FFFF00'>
+        Dataset  <br />
+      </td> 
+      <td width='16.0%' bgcolor='#FFFF00'>
+        Integral  <br />
+      </td> 
+      <td width='13.0%' bgcolor='#FFFF00'>
+        Entries per event  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FFFF00'>
+        Mean  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FFFF00'>
+        RMS  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FFFF00'>
+        % underflow  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FFFF00'>
+        % overflow  <br />
+      </td>
+    </tr>
+    <tr>
+      <td width='17.0%' bgcolor='#FFFFFF'>
+        hsig  <br />
+      </td> 
+      <td width='16.0%' bgcolor='#FFFFFF'>
+        0.501  <br />
+      </td> 
+      <td width='13.0%' bgcolor='#FFFFFF'>
+        1.0  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FFFFFF'>
+        124.858  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FFFFFF'>
+        2.517  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#00FF00'>
+        0.0  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#00FF00'>
+        0.0  <br />
+      </td>
+    </tr>
+  </table><br /> <br />
+  <center>
+    <img src='selection_14.png' height='420.459770115' alt ='' />
+  </center><br /> <br />
+  <br />
+  <br /><br />
+
+  <h2>Summary</h2><br />
+  <h3><a name='Cut-flowcharts'>Cut-flow charts</a></h3>
+  <ul>
+    <li>
+      How to compare signal (S) and background (B): <font color='#0000CC'>S/sqrt(S+B)</font>.<br />
+    </li>
+    <li>
+      Object definition selections are indicated in cyan.    </li>
+    <li>
+      Reject and select are indicated by 'REJ' and 'SEL' respectively    </li>
+  </ul>
+  <table>
+    <tr>
+      <td width='25.0%' bgcolor='#FFFF00'>
+        Cuts  <br />
+      </td> 
+      <td width='25.0%' bgcolor='#FFFF00'>
+        Signal (S)  <br />
+      </td> 
+      <td width='25.0%' bgcolor='#FFFF00'>
+        Background (B)  <br />
+      </td> 
+      <td width='24.0%' bgcolor='#FFFF00'>
+        S vs B  <br />
+      </td>
+    </tr>
+    <tr>
+      <td width='25.0%' bgcolor='#FFFFFF'>
+        Initial (no cut)  <br />
+      </td> 
+      <td width='25.0%' bgcolor='#FFFFFF'>
+        148  <br />
+      </td> 
+      <td width='25.0%' bgcolor='#FFFFFF'>
+          <br />
+      </td> 
+      <td width='24.0%' bgcolor='#FFFFFF'>
+          <br />
+      </td>
+    </tr>
+    <tr>
+      <td width='25.0%' bgcolor='#FFFFFF'>
+REJ: PT ( a[1] ) < 40.0  <br />
+      </td> 
+      <td width='25.0%' bgcolor='#FFFFFF'>
+        8.75 +/- 2.87  <br />
+      </td> 
+      <td width='25.0%' bgcolor='#FFFFFF'>
+          <br />
+      </td> 
+      <td width='24.0%' bgcolor='#FFFFFF'>
+          <br />
+      </td>
+    </tr>
+    <tr>
+      <td width='25.0%' bgcolor='#FFFFFF'>
+REJ: PT ( a[2] ) < 30.0  <br />
+      </td> 
+      <td width='25.0%' bgcolor='#FFFFFF'>
+        7.1 +/- 2.6  <br />
+      </td> 
+      <td width='25.0%' bgcolor='#FFFFFF'>
+          <br />
+      </td> 
+      <td width='24.0%' bgcolor='#FFFFFF'>
+          <br />
+      </td>
+    </tr>
+    <tr>
+      <td width='25.0%' bgcolor='#FFFFFF'>
+REJ: M ( a[1] a[2] ) < 120.0  <br />
+      </td> 
+      <td width='25.0%' bgcolor='#FFFFFF'>
+        3.54 +/- 1.86  <br />
+      </td> 
+      <td width='25.0%' bgcolor='#FFFFFF'>
+          <br />
+      </td> 
+      <td width='24.0%' bgcolor='#FFFFFF'>
+          <br />
+      </td>
+    </tr>
+    <tr>
+      <td width='25.0%' bgcolor='#FFFFFF'>
+REJ: M ( a[1] a[2] ) > 130.0  <br />
+      </td> 
+      <td width='25.0%' bgcolor='#FFFFFF'>
+        0.634 +/- 0.794  <br />
+      </td> 
+      <td width='25.0%' bgcolor='#FFFFFF'>
+          <br />
+      </td> 
+      <td width='24.0%' bgcolor='#FFFFFF'>
+          <br />
+      </td>
+    </tr>
+  </table><br /> <br />
+  <br /><hr size='4' width='350' />
+</div>
+</body>
+</html>

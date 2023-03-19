@@ -1,0 +1,1 @@
+`/LHC-DMWG/MG5_aMC_v2_7_2/madanalysis5/tools/SampleAnalyzer/ExternalSymLink/Bin/root-config --cxx` `/LHC-DMWG/MG5_aMC_v2_7_2/madanalysis5/tools/SampleAnalyzer/ExternalSymLink/Bin/root-config --cflags` all.C `/LHC-DMWG/MG5_aMC_v2_7_2/madanalysis5/tools/SampleAnalyzer/ExternalSymLink/Bin/root-config --libs` -o goROOT

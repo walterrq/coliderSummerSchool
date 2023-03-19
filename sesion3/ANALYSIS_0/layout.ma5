@@ -1,0 +1,177 @@
+################################################################################
+#                  MADANALYSIS5 CONFIGURATION FILE FOR PLOTS                   #
+#                   produced by MadAnalysis5 version 1.8.44                    #
+#                                  2020/04/17                                  #
+################################################################################
+
+################################################################################
+#                               Files and Paths                                #
+################################################################################
+<Files>
+  jobdir = /LHC-DMWG/MG5_aMC_v2_7_2/madanalysis5/ANALYSIS_1
+  html = 1
+  latex = 1
+  pdflatex = 1
+</Files>
+
+################################################################################
+#                   Global information related to the layout                   #
+################################################################################
+<Main>
+  <Normalization>
+    normalize = "2"
+    lumi = 0.001 # fb^{-1}
+  </Normalization>
+  <Histograming>
+    stack = 1
+  </Histograming>
+  <Selection>
+    fom = "4"
+    x = "0"
+  </Selection>
+</Main>
+
+################################################################################
+#                            Definition of datasets                            #
+################################################################################
+<Datasets>
+<Dataset name="hsig">
+  <Physics>
+    background = False
+    weight = 1.0
+    xsection = 0.0
+  </Physics>
+  <Layout>
+    title = hsig
+    linecolor = 0
+    linestyle = 0
+    lineshade = 0
+    linewidth = 1
+    backcolor = 0
+    backstyle = 1
+    backshade = 0
+  </Layout>
+</Dataset>
+</Datasets>
+
+################################################################################
+#                            Definition of regions                             #
+################################################################################
+<Regions>
+</Regions>
+
+################################################################################
+#              Definition of the selection : histograms and cuts               #
+################################################################################
+<Selection>
+  <Histogram name="selection0">
+    stack = 0
+    titleX = "M [ a_{1} a_{2} ] (GeV/c^{2}) "
+    titleY = "Events "
+    xmin = 100.0
+    xmax = 200.0
+  </Histogram>
+  <Histogram name="selection1">
+    stack = 0
+    titleX = "M [ a_{1} a_{2} ] (GeV/c^{2}) "
+    titleY = "Events "
+    xmin = 100.0
+    xmax = 200.0
+  </Histogram>
+  <Histogram name="selection2">
+    stack = 0
+    titleX = "M [ a_{1} a_{2} ] (GeV/c^{2}) "
+    titleY = "Events "
+    xmin = 100.0
+    xmax = 200.0
+  </Histogram>
+  <Cut name="selection3"/>
+  <Cut name="selection4"/>
+  <Histogram name="selection5">
+    stack = 0
+    titleX = "M [ a_{1} a_{2} ] (GeV/c^{2}) "
+    titleY = "Events "
+    xmin = 100.0
+    xmax = 200.0
+  </Histogram>
+  <Histogram name="selection6">
+    stack = 0
+    titleX = "M [ a_{1} a_{2} ] (GeV/c^{2}) "
+    titleY = "Events "
+    xmin = 100.0
+    xmax = 200.0
+  </Histogram>
+  <Histogram name="selection7">
+    stack = 0
+    titleX = "M [ a_{1} a_{2} ] (GeV/c^{2}) "
+    titleY = "Events "
+    xmin = 105.0
+    xmax = 160.0
+  </Histogram>
+  <Histogram name="selection8">
+    stack = 0
+    titleX = "M [ a_{1} a_{2} ] (GeV/c^{2}) "
+    titleY = "Events "
+    xmin = 105.0
+    xmax = 160.0
+  </Histogram>
+  <Histogram name="selection9">
+    stack = 0
+    titleX = "M [ a_{1} a_{2} ] (GeV/c^{2}) "
+    titleY = "Events "
+    xmin = 105.0
+    xmax = 160.0
+  </Histogram>
+  <Histogram name="selection10">
+    stack = 0
+    titleX = "M [ a_{1} a_{2} ] (GeV/c^{2}) "
+    titleY = "Events "
+    xmin = 105.0
+    xmax = 160.0
+  </Histogram>
+  <Histogram name="selection11">
+    stack = 0
+    titleX = "M [ a_{1} a_{2} ] (GeV/c^{2}) "
+    titleY = "Events "
+    xmin = 105.0
+    xmax = 160.0
+  </Histogram>
+  <Histogram name="selection12">
+    stack = 0
+    titleX = "M [ a_{1} a_{2} ] (GeV/c^{2}) "
+    titleY = "Events "
+    xmin = 105.0
+    xmax = 160.0
+  </Histogram>
+  <Histogram name="selection13">
+    stack = 0
+    titleX = "M [ a_{1} a_{2} ] (GeV/c^{2}) "
+    titleY = "Events "
+    xmin = 105.0
+    xmax = 160.0
+  </Histogram>
+  <Cut name="selection14"/>
+  <Cut name="selection15"/>
+  <Histogram name="selection16">
+    stack = 0
+    titleX = "M [ a_{1} a_{2} ] (GeV/c^{2}) "
+    titleY = "Events "
+    xmin = 115.0
+    xmax = 135.0
+  </Histogram>
+  <Histogram name="selection17">
+    stack = 0
+    titleX = "M [ a_{1} a_{2} ] (GeV/c^{2}) "
+    titleY = "Events "
+    xmin = 115.0
+    xmax = 135.0
+  </Histogram>
+  <Histogram name="selection18">
+    stack = 0
+    titleX = "M [ a_{1} a_{2} ] (GeV/c^{2}) "
+    titleY = "Events "
+    xmin = 115.0
+    xmax = 135.0
+  </Histogram>
+</Selection>
+

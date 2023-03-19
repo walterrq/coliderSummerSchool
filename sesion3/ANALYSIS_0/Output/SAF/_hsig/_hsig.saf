@@ -1,0 +1,19 @@
+<SAFheader>
+</SAFheader>
+
+<SampleGlobalInfo>
+# xsection     xsection_error nevents        sum_weight+    sum_weight-    
+1.486258e+02   0.000000e+00   50727          5.289367e+06   0.000000e+00   
+</SampleGlobalInfo>
+
+<FileInfo>
+"/LHC-DMWG/MG5_aMC_v2_7_2/madanalysis5/samples/tag_1_pythia8_events.hepmc" # file 1 / 1
+</FileInfo>
+
+<SampleDetailedInfo>
+# xsection     xsection_error nevents        sum_weight+    sum_weight-    
+1.486258e+02   0.000000e+00   50727          5.289367e+06   0.000000e+00    # file 1 / 1
+</SampleDetailedInfo>
+
+<SAFfooter>
+</SAFfooter>

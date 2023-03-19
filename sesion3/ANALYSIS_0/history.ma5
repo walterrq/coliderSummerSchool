@@ -1,0 +1,25 @@
+set main.currentdir = /LHC-DMWG/MG5_aMC_v2_7_2/madanalysis5
+import samples/tag_1_pythia8_events.hepmc as hsig
+ma5>plot M( a[1] a[2] ) 50 100 200
+plot M( a[1] a[2] ) 50 100 200
+plot M( a[1] a[2] ) 100 100 200
+plot M( a[1] a[2] ) 200 100 200
+reject PT( a[1] ) < 40
+reject PT( a[2] ) < 30
+plot M( a[1] a[2] ) 100 100 200
+plot M( a[1] a[2] ) 200 100 200
+plot M( a[1] a[2] ) 100 105 160
+plot M( a[1] a[2] ) 200 105 160
+set main.lumi = 1
+plot M( a[1] a[2] ) 100 105 160
+set main.lumi = 1e-3
+plot M( a[1] a[2] ) 100 105 160
+plot M( a[1] a[2] ) 200 105 160
+plot vM ( a[1] a[2] ) 100 105 160
+plot vM ( a[1] a[2] ) 200 105 160
+select ( a[1] a[2] ) 125.0 < M < 130.0
+reject M( a[1] a[2] ) < 120.0
+reject M( a[1] a[2] ) > 130.0
+plot M( a[1] a[2] ) 100 115 135
+plot M( a[1] a[2] ) 200 115 135
+plot vM( a[1] a[2] ) 100 115 135
